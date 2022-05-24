@@ -18,7 +18,7 @@ tram_lines[0] += "  |  "
 tram_lines[-1] += " - PROSÍME VYSTÚPTE!"
 
 window = tkinter.Tk()
-canvas = tkinter.Canvas(width=800, height=800, bg="black")
+canvas = tkinter.Canvas(width=1400, height=300, bg="black")
 canvas.pack()
 
 
@@ -39,13 +39,14 @@ def next_stop(event):
 
 stop_count = len(tram_lines)
 position = 0
-stop_text = canvas.create_text(400, 400, text=tram_lines[position], fill="white", font="Arial 60")
+stop_text = canvas.create_text(700, 150, text=tram_lines[position], fill="white", font="Arial 60")
 
 
 def repeat():
     roll()
     canvas.after(250, repeat)
     canvas.bind_all("<Key>", next_stop)
+
 
 repeat()
 window.mainloop()
