@@ -1,0 +1,6 @@
+Na digitalnom pine moze byt vo vseobecnosti iba jedna z dvoch hodnot 0 alebo 1, ide o binarnu hodnotu (neplati pre PWM vystup). 
+Hodnota 0 znamena, ze na digitalnom pine je elektricke napatie 0V, teda GND (alebo menej ako 2V pre vstup). 
+Tuto skutocnost mozeme vyjadrit stavmi LOW alebo 0. 
+Hodnota 1 znamena, ze na digitalnom pine je elektricke napatie +5V (alebo viac ako 3V pre vstup). 
+Tuto skutocnost mozeme vyjadrit stavmi HIGH alebo 1.
+Pri digitalnych vystupnych pinoch v mode PWM sa na pin posiela cele cislo z rozsahu 0 az 255.
